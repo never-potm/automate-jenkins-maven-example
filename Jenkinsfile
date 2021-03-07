@@ -13,7 +13,6 @@ pipeline {
             }
         }
         stage('Deploy in Staging environment') {
-            // We need to trigger Deploy_Application_Staging_Env job
             build job: 'Deploy_Application_Staging_Env'
         }
     }
